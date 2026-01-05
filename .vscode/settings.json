@@ -1,3 +1,4 @@
 {
-    "files.autoSaveDelay": 5
+    "files.autoSaveDelay": 5,
+    "notebook.lineNumbers": "on"
 }
