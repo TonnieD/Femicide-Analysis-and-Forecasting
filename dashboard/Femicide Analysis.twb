@@ -1,0 +1,1813 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <_.fcp.PatternedLineMarks.true...PatternedLineMarks />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='femicide_analysis' inline='true' name='federated.0gtywsh1vhx8c811ua0e101qngs9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='femicide_analysis' name='textscan.0gidl2i153xvaf140u1aq0k6vrre'>
+            <connection class='textscan' directory='C:/Users/ngang/OneDrive/Desktop/Projects/Data Science/Femicide-Analysis-and-Forecasting/Data/Processed' filename='femicide_analysis.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0gidl2i153xvaf140u1aq0k6vrre' name='femicide_analysis.csv' table='[femicide_analysis#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='url' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='string' name='author_name' ordinal='2' />
+            <column datatype='string' name='medium' ordinal='3' />
+            <column datatype='string' name='country_name' ordinal='4' />
+            <column datatype='string' name='text' ordinal='5' />
+            <column datatype='string' name='published_date' ordinal='6' />
+            <column datatype='string' name='type of murder' ordinal='7' />
+            <column datatype='string' name='name of victim' ordinal='8' />
+            <column datatype='string' name='Age' ordinal='9' />
+            <column datatype='datetime' name='date of murder' ordinal='10' />
+            <column datatype='string' name='name of suspect' ordinal='11' />
+            <column datatype='string' name='suspect relationship' ordinal='12' />
+            <column datatype='string' name='Type of femicide' ordinal='13' />
+            <column datatype='string' name='Murder Scene' ordinal='14' />
+            <column datatype='string' name='Mode of killing' ordinal='15' />
+            <column datatype='string' name='Circumstance' ordinal='16' />
+            <column datatype='string' name='Status on article date' ordinal='17' />
+            <column datatype='string' name='Court date (first appearance)' ordinal='18' />
+            <column datatype='string' name='verdict date' ordinal='19' />
+            <column datatype='string' name='Verdict' ordinal='20' />
+            <column datatype='string' name='Years of sentence' ordinal='21' />
+            <column datatype='string' name='Days to verdict' ordinal='22' />
+            <column datatype='string' name='county' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>url</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[url]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>url</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[author_name]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>author_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>medium</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[medium]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>medium</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country_name]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>country_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[text]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>text</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>published_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[published_date]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>published_date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type of murder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type of murder]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>type of murder</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name of victim</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name of victim]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>name of victim</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date of murder</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date of murder]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>date of murder</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name of suspect</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name of suspect]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>name of suspect</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>suspect relationship</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[suspect relationship]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>suspect relationship</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of femicide</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of femicide]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Type of femicide</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Murder Scene</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Murder Scene]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Murder Scene</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mode of killing</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mode of killing]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Mode of killing</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Circumstance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Circumstance]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Circumstance</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status on article date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status on article date]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Status on article date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Court date (first appearance)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Court date (first appearance)]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Court date (first appearance)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>verdict date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[verdict date]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>verdict date</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Verdict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Verdict]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Verdict</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Years of sentence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Years of sentence]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Years of sentence</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Days to verdict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Days to verdict]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>Days to verdict</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[femicide_analysis.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Murder Scene1' datatype='string' name='[Murder Scene]' role='dimension' type='nominal' />
+      <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+      <column caption='Author Name' datatype='string' name='[author_name]' role='dimension' type='nominal' />
+      <column caption='Country Name' datatype='string' name='[country_name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Date Of Murder' datatype='datetime' name='[date of murder]' role='dimension' type='ordinal' />
+      <column caption='Medium' datatype='string' name='[medium]' role='dimension' type='nominal' />
+      <column caption='Name Of Suspect' datatype='string' name='[name of suspect]' role='dimension' type='nominal' />
+      <column caption='Name Of Victim' datatype='string' name='[name of victim]' role='dimension' type='nominal' />
+      <column caption='Published Date' datatype='string' name='[published_date]' role='dimension' type='nominal' />
+      <column caption='Suspect Relationship' datatype='string' name='[suspect relationship]' role='dimension' type='nominal' />
+      <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type Of Murder' datatype='string' name='[type of murder]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
+      <column caption='Verdict Date' datatype='string' name='[verdict date]' role='dimension' type='nominal' />
+      <column-instance column='[Murder Scene]' derivation='None' name='[none:Murder Scene:nk]' pivot='key' type='nominal' />
+      <drill-paths>
+        <drill-path name='country_name, county'>
+          <field>[country_name]</field>
+          <field>[county]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ngang/AppData/Local/Temp/TableauTemp/#TableauTemp_0gv639v1l4o84b19qxgvr1l3e7dz.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='01/19/2026 01:38:48 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='femicide_analysis' increment-value='%null%' refresh-type='create' rows-inserted='507' timestamp-start='2026-01-19 13:38:47.255' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>url</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[url]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>url</remote-alias>
+              <ordinal>0</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>507</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>477</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>medium</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[medium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>medium</remote-alias>
+              <ordinal>3</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>text</remote-alias>
+              <ordinal>5</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>469</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>published_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[published_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>published_date</remote-alias>
+              <ordinal>6</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>427</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type of murder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type of murder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type of murder</remote-alias>
+              <ordinal>7</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name of victim</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name of victim]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name of victim</remote-alias>
+              <ordinal>8</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>9</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>65</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date of murder</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date of murder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date of murder</remote-alias>
+              <ordinal>10</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>442</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name of suspect</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name of suspect]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name of suspect</remote-alias>
+              <ordinal>11</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>309</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>suspect relationship</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[suspect relationship]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>suspect relationship</remote-alias>
+              <ordinal>12</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of femicide</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of femicide]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of femicide</remote-alias>
+              <ordinal>13</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Murder Scene</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Murder Scene]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Murder Scene</remote-alias>
+              <ordinal>14</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mode of killing</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Mode of killing]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mode of killing</remote-alias>
+              <ordinal>15</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Circumstance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Circumstance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Circumstance</remote-alias>
+              <ordinal>16</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status on article date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status on article date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status on article date</remote-alias>
+              <ordinal>17</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Court date (first appearance)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Court date (first appearance)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Court date (first appearance)</remote-alias>
+              <ordinal>18</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>verdict date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[verdict date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>verdict date</remote-alias>
+              <ordinal>19</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Verdict</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Verdict]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Verdict</remote-alias>
+              <ordinal>20</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Years of sentence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Years of sentence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Years of sentence</remote-alias>
+              <ordinal>21</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Days to verdict</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Days to verdict]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Days to verdict</remote-alias>
+              <ordinal>22</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>county</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[county]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>county</remote-alias>
+              <ordinal>23</ordinal>
+              <family>femicide_analysis.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Murder Scene:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Home&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;School&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Public Space&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Workplace&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Kenya&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='femicide_analysis.csv1' id='femicide_analysis.csv_A256FA2323034132AA806B6144994CFC'>
+            <properties context=''>
+              <relation connection='textscan.0gidl2i153xvaf140u1aq0k6vrre' name='femicide_analysis.csv' table='[femicide_analysis#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='url' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='string' name='author_name' ordinal='2' />
+                  <column datatype='string' name='medium' ordinal='3' />
+                  <column datatype='string' name='country_name' ordinal='4' />
+                  <column datatype='string' name='text' ordinal='5' />
+                  <column datatype='string' name='published_date' ordinal='6' />
+                  <column datatype='string' name='type of murder' ordinal='7' />
+                  <column datatype='string' name='name of victim' ordinal='8' />
+                  <column datatype='string' name='Age' ordinal='9' />
+                  <column datatype='datetime' name='date of murder' ordinal='10' />
+                  <column datatype='string' name='name of suspect' ordinal='11' />
+                  <column datatype='string' name='suspect relationship' ordinal='12' />
+                  <column datatype='string' name='Type of femicide' ordinal='13' />
+                  <column datatype='string' name='Murder Scene' ordinal='14' />
+                  <column datatype='string' name='Mode of killing' ordinal='15' />
+                  <column datatype='string' name='Circumstance' ordinal='16' />
+                  <column datatype='string' name='Status on article date' ordinal='17' />
+                  <column datatype='string' name='Court date (first appearance)' ordinal='18' />
+                  <column datatype='string' name='verdict date' ordinal='19' />
+                  <column datatype='string' name='Verdict' ordinal='20' />
+                  <column datatype='string' name='Years of sentence' ordinal='21' />
+                  <column datatype='string' name='Days to verdict' ordinal='22' />
+                  <column datatype='string' name='county' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Yearly_trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>YEARLY CASE COUNT</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
+            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+            <column caption='Date Of Murder' datatype='datetime' name='[date of murder]' role='dimension' type='ordinal' />
+            <column-instance column='[date of murder]' derivation='Year-Trunc' name='[tyr:date of murder:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]' value='38' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4722652435302734' />
+                <_.fcp.PatternedLineMarks.true...format attr='mark-line-pattern' value='solid' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4722652435302734' />
+                <_.fcp.PatternedLineMarks.true...format attr='mark-line-pattern' value='solid' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4722652435302734' />
+                <_.fcp.PatternedLineMarks.true...format attr='mark-line-pattern' value='solid' />
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk] + [federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk])</rows>
+        <cols>[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]</cols>
+      </table>
+      <simple-id uuid='{C880BB0A-700C-4684-8C0A-DF1FFEB29C42}' />
+    </worksheet>
+    <worksheet name='where_they_happen'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Where Women are Most Unsafe</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column caption='Murder Scene1' datatype='string' name='[Murder Scene]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
+            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+            <column-instance column='[Murder Scene]' derivation='None' name='[none:Murder Scene:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='5' />
+            <format attr='background-color' value='#d4d4d4' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]</rows>
+        <cols>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]</cols>
+      </table>
+      <simple-id uuid='{A8466E9D-51D9-499B-B4F2-886641903D8D}' />
+    </worksheet>
+    <worksheet name='where_they_happen_1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Where Women are Most Unsafe</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column caption='Murder Scene1' datatype='string' name='[Murder Scene]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
+            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Murder Scene]' derivation='None' name='[none:Murder Scene:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='395' />
+            <format attr='width' value='648' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' />
+              <wedge-size column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <size column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' />
+              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[pcto:cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3B79D590-6C0A-4D37-974D-23C850FD86E3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Yearly_trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='184'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]</field>
+            <field>[federated.0gtywsh1vhx8c811ua0e101qngs9].[yr:date of murder:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4CCBE04D-6423-4513-AFE2-ABA8CEAEAED0}' />
+    </window>
+    <window class='worksheet' name='where_they_happen'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{06DB93F7-3CE0-4B9B-9CF6-E9E9800AEF1A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='where_they_happen_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{30D8EB27-EAEF-4719-8800-D34D7E336B28}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Yearly_trend' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='where_they_happen' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='where_they_happen_1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
