@@ -460,10 +460,6 @@
       <column caption='Name Of Victim' datatype='string' name='[name of victim]' role='dimension' type='nominal' />
       <column caption='Published Date' datatype='string' name='[published_date]' role='dimension' type='nominal' />
       <column caption='Suspect Relationship' datatype='string' name='[suspect relationship]' role='dimension' type='nominal' />
-      <column datatype='string' name='[suspsect relationship (group)]' role='dimension' type='nominal'>
-        <calculation class='categorical-bin' column='[suspsect relationship]' new-bin='true' />
-      </column>
-      <column datatype='string' name='[suspsect relationship]' role='dimension' type='nominal' />
       <column caption='Text' datatype='string' name='[text]' role='dimension' type='nominal' />
       <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
       <column caption='Type Of Murder' datatype='string' name='[type of murder]' role='dimension' type='nominal' />
@@ -1269,25 +1265,25 @@
     <window class='worksheet' name='Yearly_trend'>
       <cards>
         <edge name='left'>
-          <strip size='184'>
+          <strip size='122'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='48'>
+          <strip size='32'>
             <card type='columns' />
           </strip>
-          <strip size='48'>
+          <strip size='32'>
             <card type='rows' />
           </strip>
-          <strip size='46'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]' type='highlighter' />
           </strip>
         </edge>
@@ -1297,7 +1293,7 @@
     <window class='worksheet' name='where_they_happen'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='marks' />
           </strip>
@@ -1309,12 +1305,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card pane-specification-id='1' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
           </strip>
         </edge>
@@ -1324,7 +1320,7 @@
     <window class='worksheet' name='where_they_happen_1'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -1337,12 +1333,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='300'>
+          <strip size='200'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
           </strip>
@@ -1356,7 +1352,7 @@
     <window class='worksheet' name='hotspot_counties'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -1369,12 +1365,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='114'>
+          <strip size='76'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
           </strip>
         </edge>
@@ -1387,7 +1383,7 @@
     <window class='worksheet' maximized='true' name='Whos_killing_women'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -1400,12 +1396,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:suspect relationship:nk]' type='color' />
           </strip>
         </edge>
