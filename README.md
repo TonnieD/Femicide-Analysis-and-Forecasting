@@ -68,4 +68,4 @@ To run this project, you need Python installed along with the following librarie
 *   (Instructions for running `dashboard/app.py` can be added here once the dashboard is implemented.)
 
 ## Data Source
-The data is compiled from reported femicide cases in Kenya (media monitoring) and obtained from https://www.africadatahub.org/femicide-kenya-database
+The data is compiled from reported femicide cases in Kenya (media monitoring) and obtained from [Africadatahub](https://ckan.africadatahub.org/dataset/kenya-femicide-data)
