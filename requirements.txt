@@ -6,3 +6,4 @@ scipy
 statsmodels
 openpyxl
 jupyter
+tabpy
