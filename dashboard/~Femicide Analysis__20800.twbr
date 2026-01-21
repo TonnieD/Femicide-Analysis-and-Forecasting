@@ -992,56 +992,6 @@
     <mapsource name='Tableau' />
   </mapsources>
   <worksheets>
-    <worksheet name='Sheet 11'>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
-          </datasources>
-          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
-            <column datatype='string' name='[Type of femicide]' role='dimension' type='nominal' />
-            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
-            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
-            <column-instance column='[Type of femicide]' derivation='None' name='[none:Type of femicide:nk]' pivot='key' type='nominal' />
-          </datasource-dependencies>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='mark'>
-            <encoding attr='size-bar' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Square' />
-            <encodings>
-              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
-              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='has-stroke' value='false' />
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-line-first' value='true' />
-                <format attr='mark-labels-line-last' value='true' />
-                <format attr='mark-labels-range-min' value='true' />
-                <format attr='mark-labels-range-max' value='true' />
-                <format attr='mark-labels-mode' value='all' />
-                <format attr='mark-labels-range-scope' value='pane' />
-                <format attr='mark-labels-range-field' value='' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]</rows>
-        <cols />
-      </table>
-      <simple-id uuid='{716B8BA8-A4D0-4662-BE0F-8FC4886E4446}' />
-    </worksheet>
     <worksheet name='Whos_killing_women'>
       <layout-options>
         <title>
@@ -1121,20 +1071,20 @@
             <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
           </datasources>
           <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column datatype='string' name='[Type of femicide]' role='dimension' type='nominal' />
             <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
             <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[pcto:cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Rows' type='PctTotal' />
             </column-instance>
-            <column-instance column='[relationship_class]' derivation='None' name='[none:relationship_class:nk]' pivot='key' type='nominal' />
-            <column datatype='string' name='[relationship_class]' role='dimension' type='nominal' />
+            <column-instance column='[Type of femicide]' derivation='None' name='[none:Type of femicide:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='cell'>
-            <format attr='width' value='371' />
-            <format attr='height' value='248' />
+            <format attr='width' value='377' />
+            <format attr='height' value='303' />
           </style-rule>
         </style>
         <panes>
@@ -1145,10 +1095,11 @@
             <mark class='Pie' />
             <mark-sizing mark-sizing-setting='marks-scaling-off' />
             <encodings>
-              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:relationship_class:nk]' />
+              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' />
               <wedge-size column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <size column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' />
               <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[pcto:cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
-              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:relationship_class:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
@@ -1583,6 +1534,63 @@
       </table>
       <simple-id uuid='{579F3940-10BF-40B4-8ECF-C674ADBB3285}' />
     </worksheet>
+    <worksheet name='verdict'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Case Verdict Outcome</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column datatype='string' name='[Years of sentence]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
+            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+            <column-instance column='[Years of sentence]' derivation='None' name='[none:Years of sentence:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Years of sentence:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AE371C84-9B5E-45CB-A421-A9D2132F0130}' />
+    </worksheet>
     <worksheet name='where_they_happen'>
       <layout-options>
         <title>
@@ -1844,7 +1852,7 @@
     <window class='worksheet' name='Whos_killing_women_1'>
       <cards>
         <edge name='left'>
-          <strip size='240'>
+          <strip size='119'>
             <card type='pages' />
             <card type='marks' />
           </strip>
@@ -1862,7 +1870,8 @@
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:relationship_class:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
           </strip>
         </edge>
       </cards>
@@ -1974,7 +1983,7 @@
       </cards>
       <simple-id uuid='{1D02E91A-A25F-4F74-9F52-25FD3CE29DD2}' />
     </window>
-    <window class='worksheet' maximized='true' name='Sheet 11'>
+    <window class='worksheet' maximized='true' name='verdict'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2000,7 +2009,7 @@
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{205791E2-F247-409D-82DB-C935FCD1DF7F}' />
+      <simple-id uuid='{072F2562-9B83-4377-A963-6FD2D5E20B01}' />
     </window>
   </windows>
 </workbook>
