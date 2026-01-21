@@ -319,6 +319,7 @@
             <ordinal>16</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
             <scale>1</scale>
             <width>1073741823</width>
             <contains-null>true</contains-null>
@@ -746,7 +747,7 @@
               <family>femicide_analysis.csv</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>48</approx-count>
+              <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
             </metadata-record>
@@ -1424,19 +1425,53 @@
       </layout-options>
       <table>
         <view>
-          <datasources />
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column datatype='string' name='[Circumstance]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
+            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+            <column-instance column='[Circumstance]' derivation='None' name='[none:Circumstance:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Circumstance:nk]' direction='DESC' using='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Circumstance:nk]' value='652' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
         <panes>
           <pane selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
-            <mark class='Automatic' />
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
-        <rows />
+        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Circumstance:nk]</rows>
         <cols />
       </table>
       <simple-id uuid='{D93AD23F-11F4-4553-A2AC-857D52727AF4}' />
@@ -1880,6 +1915,11 @@
           </strip>
           <strip size='31'>
             <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
           </strip>
         </edge>
       </cards>
