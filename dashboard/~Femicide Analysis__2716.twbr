@@ -1880,25 +1880,25 @@
     <window class='worksheet' name='Yearly_trend'>
       <cards>
         <edge name='left'>
-          <strip size='184'>
+          <strip size='276'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='48'>
+          <strip size='72'>
             <card type='columns' />
           </strip>
-          <strip size='48'>
+          <strip size='72'>
             <card type='rows' />
           </strip>
-          <strip size='46'>
+          <strip size='69'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='240'>
             <card param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[tyr:date of murder:ok]' type='highlighter' />
           </strip>
         </edge>
@@ -1908,7 +1908,7 @@
     <window class='worksheet' name='where_they_happen'>
       <cards>
         <edge name='left'>
-          <strip size='106'>
+          <strip size='160'>
             <card type='pages' />
             <card type='marks' />
           </strip>
@@ -1920,12 +1920,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='20'>
+          <strip size='31'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='106'>
+          <strip size='160'>
             <card pane-specification-id='1' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
           </strip>
         </edge>
@@ -1935,7 +1935,7 @@
     <window class='worksheet' name='where_they_happen_1'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='240'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -1948,12 +1948,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='46'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='300'>
+          <strip size='450'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
           </strip>
@@ -1967,7 +1967,7 @@
     <window class='worksheet' name='hotspot_counties'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='240'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -1980,12 +1980,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='46'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='114'>
+          <strip size='171'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
           </strip>
         </edge>
@@ -1998,6 +1998,83 @@
     <window class='worksheet' name='Whos_killing_women'>
       <cards>
         <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:suspect relationship:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6EA6745F-B4AE-40F6-B321-DEC598F769CC}' />
+    </window>
+    <window class='worksheet' name='Whos_killing_women_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='178'>
+            <card type='pages' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='72'>
+            <card type='columns' />
+          </strip>
+          <strip size='72'>
+            <card type='rows' />
+          </strip>
+          <strip size='69'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C92A36D5-B748-4833-9055-9A50CCA953E8}' />
+    </window>
+    <window class='worksheet' name='age_distributon'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A10FA43A-A255-4978-BEAF-E00698D1646A}' />
+    </window>
+    <window class='worksheet' name='age_distributon_1'>
+      <cards>
+        <edge name='left'>
           <strip size='160'>
             <card type='pages' />
             <card type='filters' />
@@ -2011,23 +2088,137 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='31'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:suspect relationship:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Age_Group:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{6EA6745F-B4AE-40F6-B321-DEC598F769CC}' />
+      <simple-id uuid='{24CA4C95-17E2-4C6F-AA40-0B54499FE200}' />
     </window>
-    <window class='worksheet' name='Whos_killing_women_1'>
+    <window class='worksheet' name='mode of killing'>
       <cards>
         <edge name='left'>
-          <strip size='118'>
+          <strip size='160'>
             <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DBDC7C56-4D94-4822-854A-8B245A7CF23A}' />
+    </window>
+    <window class='worksheet' name='leading to crime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='48'>
+            <card type='columns' />
+          </strip>
+          <strip size='48'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='150'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1D02E91A-A25F-4F74-9F52-25FD3CE29DD2}' />
+    </window>
+    <window class='worksheet' name='sentencing'>
+      <cards>
+        <edge name='left'>
+          <strip size='150'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{072F2562-9B83-4377-A963-6FD2D5E20B01}' />
+    </window>
+    <window class='worksheet' name='verdict'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D2D3F4C1-E354-4A67-AD11-B71CB31F8290}' />
+    </window>
+    <window class='worksheet' name='who, how &amp; whom'>
+      <cards>
+        <edge name='left'>
+          <strip size='149'>
+            <card type='pages' />
+            <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
@@ -2043,198 +2234,7 @@
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{C92A36D5-B748-4833-9055-9A50CCA953E8}' />
-    </window>
-    <window class='worksheet' name='age_distributon'>
-      <cards>
-        <edge name='left'>
-          <strip size='106'>
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='20'>
-            <card type='title' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{A10FA43A-A255-4978-BEAF-E00698D1646A}' />
-    </window>
-    <window class='worksheet' name='age_distributon_1'>
-      <cards>
-        <edge name='left'>
-          <strip size='106'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='20'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='106'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Age_Group:nk]' type='color' />
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{24CA4C95-17E2-4C6F-AA40-0B54499FE200}' />
-    </window>
-    <window class='worksheet' name='mode of killing'>
-      <cards>
-        <edge name='left'>
-          <strip size='106'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='20'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='106'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{DBDC7C56-4D94-4822-854A-8B245A7CF23A}' />
-    </window>
-    <window class='worksheet' name='leading to crime'>
-      <cards>
-        <edge name='left'>
-          <strip size='106'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='20'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='100'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{1D02E91A-A25F-4F74-9F52-25FD3CE29DD2}' />
-    </window>
-    <window class='worksheet' name='sentencing'>
-      <cards>
-        <edge name='left'>
-          <strip size='100'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='30'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='106'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{072F2562-9B83-4377-A963-6FD2D5E20B01}' />
-    </window>
-    <window class='worksheet' name='verdict'>
-      <cards>
-        <edge name='left'>
-          <strip size='106'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='20'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='106'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{D2D3F4C1-E354-4A67-AD11-B71CB31F8290}' />
-    </window>
-    <window class='worksheet' name='who, how &amp; whom'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='30'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
+          <strip size='240'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
           </strip>
         </edge>
@@ -2244,20 +2244,20 @@
     <window class='worksheet' maximized='true' name='Sheet 14'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='240'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='48'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='48'>
             <card type='rows' />
           </strip>
-          <strip size='30'>
+          <strip size='46'>
             <card type='title' />
           </strip>
         </edge>
