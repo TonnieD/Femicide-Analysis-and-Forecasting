@@ -992,6 +992,46 @@
     <mapsource name='Tableau' />
   </mapsources>
   <worksheets>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column datatype='string' name='[Days to verdict]' role='dimension' type='nominal' />
+            <column-instance column='[Days to verdict]' derivation='None' name='[none:Days to verdict:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Days to verdict:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{EC2B3ADD-F507-43F0-9157-4FD0925B8D98}' />
+    </worksheet>
     <worksheet name='Whos_killing_women'>
       <layout-options>
         <title>
@@ -1534,11 +1574,11 @@
       </table>
       <simple-id uuid='{579F3940-10BF-40B4-8ECF-C674ADBB3285}' />
     </worksheet>
-    <worksheet name='ruling'>
+    <worksheet name='sentencing'>
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true' fontalignment='1'>Ruling</run>
+            <run bold='true' fontalignment='1'>Sentencing</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -1570,6 +1610,7 @@
             <encodings>
               <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
               <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
+              <lod column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Years of sentence:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
@@ -1761,8 +1802,81 @@
       </table>
       <simple-id uuid='{3B79D590-6C0A-4D37-974D-23C850FD86E3}' />
     </worksheet>
+    <worksheet name='who, how &amp; whom'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Age Group, Mode of Killing and Type of Femicide Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
+            <column datatype='string' name='[Age_Group]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Mode of killing]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of femicide]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
+            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
+            <column-instance column='[Age_Group]' derivation='None' name='[none:Age_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Mode of killing]' derivation='None' name='[none:Mode of killing:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type of femicide]' derivation='None' name='[none:Type of femicide:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Mode of killing:nk]' value='26' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='font-weight' data-class='subtotal' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Mode of killing:nk]' value='-90' />
+            <format attr='color' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Mode of killing:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Mode of killing:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' value='bold' />
+            <format attr='color' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' value='#000000' />
+            <format attr='color' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Age_Group:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Age_Group:nk]' value='bold' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]</rows>
+        <cols>([federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Age_Group:nk] / [federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Mode of killing:nk])</cols>
+      </table>
+      <simple-id uuid='{0DF243FB-CDD7-4EB6-ACB4-E8BCCFD0EEE5}' />
+    </worksheet>
   </worksheets>
-  <windows source-height='30'>
+  <windows source-height='44'>
     <window class='worksheet' name='Yearly_trend'>
       <cards>
         <edge name='left'>
@@ -1794,7 +1908,7 @@
     <window class='worksheet' name='where_they_happen'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='marks' />
           </strip>
@@ -1806,12 +1920,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card pane-specification-id='1' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Murder Scene:nk]' type='color' />
           </strip>
         </edge>
@@ -1834,7 +1948,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1866,7 +1980,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1897,7 +2011,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
@@ -1912,7 +2026,7 @@
     <window class='worksheet' name='Whos_killing_women_1'>
       <cards>
         <edge name='left'>
-          <strip size='119'>
+          <strip size='118'>
             <card type='pages' />
             <card type='marks' />
           </strip>
@@ -1940,7 +2054,7 @@
     <window class='worksheet' name='age_distributon'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='marks' />
           </strip>
         </edge>
@@ -1951,7 +2065,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
@@ -1961,7 +2075,7 @@
     <window class='worksheet' name='age_distributon_1'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -1974,12 +2088,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Age_Group:nk]' type='color' />
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
           </strip>
@@ -1990,7 +2104,7 @@
     <window class='worksheet' name='mode of killing'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -2003,12 +2117,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
           </strip>
         </edge>
@@ -2018,7 +2132,7 @@
     <window class='worksheet' name='leading to crime'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='106'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -2031,7 +2145,7 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='20'>
             <card type='title' />
           </strip>
         </edge>
@@ -2043,28 +2157,28 @@
       </cards>
       <simple-id uuid='{1D02E91A-A25F-4F74-9F52-25FD3CE29DD2}' />
     </window>
-    <window class='worksheet' maximized='true' name='ruling'>
+    <window class='worksheet' name='sentencing'>
       <cards>
         <edge name='left'>
-          <strip size='119'>
+          <strip size='100'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='48'>
+          <strip size='2147483647'>
             <card type='columns' />
           </strip>
-          <strip size='48'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='46'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='106'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
           </strip>
         </edge>
@@ -2074,6 +2188,34 @@
     <window class='worksheet' name='verdict'>
       <cards>
         <edge name='left'>
+          <strip size='106'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='20'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='106'>
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D2D3F4C1-E354-4A67-AD11-B71CB31F8290}' />
+    </window>
+    <window class='worksheet' name='who, how &amp; whom'>
+      <cards>
+        <edge name='left'>
           <strip size='160'>
             <card type='pages' />
             <card type='filters' />
@@ -2087,17 +2229,40 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='30'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{D2D3F4C1-E354-4A67-AD11-B71CB31F8290}' />
+      <simple-id uuid='{3BEE2816-4F62-4D8F-A4BC-A4B6218CD33D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AE974173-DC26-452D-B8B9-833B86FCD410}' />
     </window>
   </windows>
 </workbook>
