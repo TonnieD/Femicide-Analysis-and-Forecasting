@@ -3,7 +3,9 @@
 <!-- build 20243.24.1010.1014                               -->
 <workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
     <MapboxVectorStylesAndLayers />
     <MarkAnimation />
     <ObjectModelEncapsulateLegacy />
@@ -11,6 +13,7 @@
     <ObjectModelTableType />
     <_.fcp.PatternedLineMarks.true...PatternedLineMarks />
     <SchemaViewerObjectModel />
+    <SetMembershipControl />
     <SheetIdentifierTracking />
     <SortTagCleanup />
     <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
@@ -510,8 +513,11 @@
         </drill-path>
       </drill-paths>
       <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ngang/AppData/Local/Temp/TableauTemp/#TableauTemp_0gv639v1l4o84b19qxgvr1l3e7dz.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/ngang/AppData/Local/Temp/TableauTemp/#TableauTemp_0gv639v1l4o84b19qxgvr1l3e7dz.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='01/24/2026 07:52:36 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='femicide_analysis' increment-value='%null%' refresh-type='create' rows-inserted='507' timestamp-start='2026-01-24 19:52:35.615' />
+          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>url</remote-name>
@@ -526,6 +532,7 @@
               <approx-count>507</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>title</remote-name>
@@ -540,6 +547,7 @@
               <approx-count>477</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>author_name</remote-name>
@@ -554,6 +562,7 @@
               <approx-count>274</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>medium</remote-name>
@@ -568,6 +577,7 @@
               <approx-count>25</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>country_name</remote-name>
@@ -582,6 +592,7 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>text</remote-name>
@@ -596,6 +607,7 @@
               <approx-count>469</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>published_date</remote-name>
@@ -610,6 +622,7 @@
               <approx-count>427</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>type of murder</remote-name>
@@ -624,6 +637,7 @@
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>name of victim</remote-name>
@@ -638,6 +652,7 @@
               <approx-count>396</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Age</remote-name>
@@ -652,6 +667,7 @@
               <approx-count>65</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>date of murder</remote-name>
@@ -665,6 +681,7 @@
               <aggregation>Year</aggregation>
               <approx-count>442</approx-count>
               <contains-null>true</contains-null>
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>name of suspect</remote-name>
@@ -679,6 +696,7 @@
               <approx-count>309</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>suspect relationship</remote-name>
@@ -693,6 +711,7 @@
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Type of femicide</remote-name>
@@ -707,6 +726,7 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Murder Scene</remote-name>
@@ -721,6 +741,7 @@
               <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mode of killing</remote-name>
@@ -735,6 +756,7 @@
               <approx-count>9</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Circumstance</remote-name>
@@ -749,6 +771,7 @@
               <approx-count>43</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Status on article date</remote-name>
@@ -763,6 +786,7 @@
               <approx-count>15</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Court date (first appearance)</remote-name>
@@ -777,6 +801,7 @@
               <approx-count>67</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>verdict date</remote-name>
@@ -791,6 +816,7 @@
               <approx-count>37</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Verdict</remote-name>
@@ -805,6 +831,7 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Years of sentence</remote-name>
@@ -819,6 +846,7 @@
               <approx-count>15</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Days to verdict</remote-name>
@@ -833,6 +861,7 @@
               <approx-count>37</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>county</remote-name>
@@ -847,6 +876,7 @@
               <approx-count>46</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>suspsect relationship</remote-name>
@@ -861,6 +891,7 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Age_Group</remote-name>
@@ -875,6 +906,7 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>relationship_class</remote-name>
@@ -889,6 +921,7 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='0' name='LEN_RUS' />
+              <object-id>[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]</object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -896,26 +929,6 @@
       <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
-          <encoding attr='color' field='[none:Murder Scene:nk]' type='palette'>
-            <map to='#4e79a7'>
-              <bucket>&quot;Home&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Unknown&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;School&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Public Space&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;Workplace&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Other&quot;</bucket>
-            </map>
-          </encoding>
           <encoding attr='color' field='[none:suspect relationship:nk]' type='palette'>
             <map to='#4e79a7'>
               <bucket>&quot;Boyfriend&quot;</bucket>
@@ -940,6 +953,26 @@
             </map>
             <map to='#ff9da7'>
               <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Murder Scene:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Home&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;School&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Public Space&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Workplace&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Other&quot;</bucket>
             </map>
           </encoding>
         </style-rule>
@@ -992,56 +1025,6 @@
     <mapsource name='Tableau' />
   </mapsources>
   <worksheets>
-    <worksheet name='Sheet 14'>
-      <table>
-        <view>
-          <datasources>
-            <datasource caption='femicide_analysis' name='federated.0gtywsh1vhx8c811ua0e101qngs9' />
-          </datasources>
-          <datasource-dependencies datasource='federated.0gtywsh1vhx8c811ua0e101qngs9'>
-            <column datatype='string' name='[Days to verdict]' role='dimension' type='nominal' />
-            <column-instance column='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' pivot='key' type='quantitative' />
-            <column caption='femicide_analysis.csv1' datatype='table' name='[__tableau_internal_object_id__].[femicide_analysis.csv_A256FA2323034132AA806B6144994CFC]' role='measure' type='quantitative' />
-            <column-instance column='[Days to verdict]' derivation='None' name='[none:Days to verdict:nk]' pivot='key' type='nominal' />
-          </datasource-dependencies>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='mark'>
-            <encoding attr='size-bar' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Square' />
-            <encodings>
-              <color column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
-              <text column='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' />
-            </encodings>
-            <style>
-              <style-rule element='mark'>
-                <format attr='has-stroke' value='false' />
-                <format attr='mark-labels-show' value='true' />
-                <format attr='mark-labels-cull' value='true' />
-                <format attr='mark-labels-line-first' value='true' />
-                <format attr='mark-labels-line-last' value='true' />
-                <format attr='mark-labels-range-min' value='true' />
-                <format attr='mark-labels-range-max' value='true' />
-                <format attr='mark-labels-mode' value='all' />
-                <format attr='mark-labels-range-scope' value='pane' />
-                <format attr='mark-labels-range-field' value='' />
-              </style-rule>
-            </style>
-          </pane>
-        </panes>
-        <rows>[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Days to verdict:nk]</rows>
-        <cols />
-      </table>
-      <simple-id uuid='{EC2B3ADD-F507-43F0-9157-4FD0925B8D98}' />
-    </worksheet>
     <worksheet name='Whos_killing_women'>
       <layout-options>
         <title>
@@ -1430,8 +1413,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[Longitude (generated)]' field-type='quantitative' max='5441359.9471880179' min='3194967.0039993543' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[Latitude (generated)]' field-type='quantitative' max='554745.65988262417' min='-507587.96388933237' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[Longitude (generated)]' field-type='quantitative' max='5187451.1668733284' min='3348320.3152765967' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[Latitude (generated)]' field-type='quantitative' max='570338.13063227874' min='-537932.93335442059' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' palette='red_10_0' type='interpolated' />
@@ -1886,6 +1869,73 @@
       <simple-id uuid='{0DF243FB-CDD7-4EB6-ACB4-E8BCCFD0EEE5}' />
     </worksheet>
   </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='920' minheight='560' minwidth='920' sizing-mode='range' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EA9A5D73-DDE6-4460-B41A-BCA9CCA8B185}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='920' minheight='560' minwidth='820' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97142' id='7' param='horz' type-v2='layout-flow' w='98260' x='870' y='1429'>
+            <zone h='97142' id='5' type-v2='layout-basic' w='98260' x='870' y='1429'>
+              <zone h='97142' id='3' name='Yearly_trend' w='98260' x='870' y='1429'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A4B3CD83-B483-44F6-A72D-0BEAC2299607}' />
+    </dashboard>
+  </dashboards>
   <windows source-height='30'>
     <window class='worksheet' name='Yearly_trend'>
       <cards>
@@ -1977,25 +2027,25 @@
     <window class='worksheet' name='hotspot_counties'>
       <cards>
         <edge name='left'>
-          <strip size='240'>
+          <strip size='189'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='48'>
             <card type='columns' />
           </strip>
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='46'>
+          <strip size='69'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='171'>
+          <strip size='217'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
           </strip>
         </edge>
@@ -2005,10 +2055,15 @@
       </viewpoint>
       <simple-id uuid='{22B5EF7A-D77A-41BC-AC5F-10AAFA46C888}' />
     </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{77FB320A-8F0B-423C-8988-2E23E5E27002}' />
+    </window>
     <window class='worksheet' name='Whos_killing_women'>
       <cards>
         <edge name='left'>
-          <strip size='240'>
+          <strip size='360'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -2021,12 +2076,12 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='46'>
+          <strip size='69'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='240'>
+          <strip size='360'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:suspect relationship:nk]' type='color' />
           </strip>
         </edge>
@@ -2036,24 +2091,24 @@
     <window class='worksheet' name='Whos_killing_women_1'>
       <cards>
         <edge name='left'>
-          <strip size='178'>
+          <strip size='267'>
             <card type='pages' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='72'>
+          <strip size='108'>
             <card type='columns' />
           </strip>
-          <strip size='72'>
+          <strip size='108'>
             <card type='rows' />
           </strip>
-          <strip size='69'>
+          <strip size='103'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='240'>
+          <strip size='360'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='size' />
           </strip>
@@ -2064,18 +2119,18 @@
     <window class='worksheet' name='age_distributon'>
       <cards>
         <edge name='left'>
-          <strip size='160'>
+          <strip size='152'>
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='2147483647'>
+          <strip size='48'>
             <card type='columns' />
           </strip>
-          <strip size='2147483647'>
+          <strip size='48'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='46'>
             <card type='title' />
           </strip>
         </edge>
@@ -2138,6 +2193,15 @@
         </edge>
       </cards>
       <simple-id uuid='{DBDC7C56-4D94-4822-854A-8B245A7CF23A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Yearly_trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9C0A2290-3400-48A2-B1E8-296B9CFF0DDB}' />
     </window>
     <window class='worksheet' name='leading to crime'>
       <cards>
@@ -2223,61 +2287,33 @@
       </cards>
       <simple-id uuid='{D2D3F4C1-E354-4A67-AD11-B71CB31F8290}' />
     </window>
-    <window class='worksheet' maximized='true' name='who, how &amp; whom'>
+    <window class='worksheet' name='who, how &amp; whom'>
       <cards>
         <edge name='left'>
-          <strip size='149'>
+          <strip size='143'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
           </strip>
         </edge>
         <edge name='top'>
-          <strip size='48'>
+          <strip size='72'>
             <card type='columns' />
           </strip>
-          <strip size='48'>
+          <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='46'>
+          <strip size='69'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='240'>
+          <strip size='100'>
             <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[none:Type of femicide:nk]' type='color' />
           </strip>
         </edge>
       </cards>
       <simple-id uuid='{3BEE2816-4F62-4D8F-A4BC-A4B6218CD33D}' />
-    </window>
-    <window class='worksheet' name='Sheet 14'>
-      <cards>
-        <edge name='left'>
-          <strip size='150'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='48'>
-            <card type='columns' />
-          </strip>
-          <strip size='48'>
-            <card type='rows' />
-          </strip>
-          <strip size='46'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.0gtywsh1vhx8c811ua0e101qngs9].[__tableau_internal_object_id__].[cnt:femicide_analysis.csv_A256FA2323034132AA806B6144994CFC:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{AE974173-DC26-452D-B8B9-833B86FCD410}' />
     </window>
   </windows>
 </workbook>
